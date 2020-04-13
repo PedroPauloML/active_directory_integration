@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+development:
+  <<: *default
+  database: active_directory_integration_development
+test:
+  <<: *default
+  database: active_directory_integration_test
+production:
+  <<: *default
+  host: db
+  username: postgres
+  password: mypassword
+  database: active_directory_integration_production
