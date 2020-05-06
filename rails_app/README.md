@@ -1,24 +1,41 @@
-# README
+# Active Directory Integration
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Configuration developed with the help of the post: https://medium.com/@takatoyo/step-by-step-implement-active-directory-auth-with-devise-33590bd3e3f1
 
-Things you may want to cover:
+## Prerequisites
 
-* Ruby version
+- Ruby 2.6.6
+- Rails 5.2.4.2
+- Docker 19.03.8
 
-* System dependencies
+## Getting started
 
-* Configuration
+### Run the project
 
-* Database creation
+To run the project, access the folder `/rails_app` and run:
 
-* Database initialization
+```
+$ bundle install
+$ rails db:create db:migrate
+$ rails s
+```
 
-* How to run the test suite
+And access, on your browser: `http://localhost:3000`.
 
-* Services (job queues, cache servers, search engines, etc.)
+### Enviroment variables
 
-* Deployment instructions
+The project needs two enviroment variables: `LDAP_HOST` and `LDAP_ADMIN_PASSWORD`.
 
-* ...
+To export this variables, run:
+
+```
+export LDAP_HOST=<value>
+export LDAP_ADMIN_PASSWORD=<value>
+```
+
+Or add on your `~/.bash_profile`:
+
+```
+LDAP_HOST=<value>
+LDAP_ADMIN_PASSWORD=<value>
+```

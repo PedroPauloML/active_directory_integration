@@ -1,5 +1,7 @@
 # Active Directory Integration
 
+Configuration developed with the help of the post: https://medium.com/@takatoyo/step-by-step-implement-active-directory-auth-with-devise-33590bd3e3f1
+
 ## Prerequisites
 
 - Ruby 2.6.6
