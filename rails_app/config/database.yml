@@ -2,6 +2,7 @@ default: &default
   adapter: postgresql
   encoding: unicode
   pool: 5
+  template: template0
 development:
   <<: *default
   database: active_directory_integration_development
