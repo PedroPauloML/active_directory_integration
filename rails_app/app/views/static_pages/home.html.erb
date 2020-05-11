@@ -1,4 +1,13 @@
 <h1>StaticPages#home</h1>
 <p>Find me in app/views/static_pages/home.html.erb</p>
 <p>Welcome <%= current_user.username %> !</p>
+
+<li>sAMAccountName: <%= current_user.username %></li>
+<li>givenName: <%= current_user.first_name %></li>
+<li>sn: <%= current_user.last_name %></li>
+<li>telephoneNumber: <%= current_user.phone_number %></li>
+<li>title: <%= current_user.title %></li>
+<li>mail: <%= current_user.mail %></li>
+<li>employeeID: <%= current_user.employee_number %></li>
+
 <%= link_to  "logout", destroy_user_session_path %>

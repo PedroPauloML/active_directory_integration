@@ -1,6 +1,9 @@
 # Active Directory Integration
 
-Configuration developed with the help of the post: https://medium.com/@takatoyo/step-by-step-implement-active-directory-auth-with-devise-33590bd3e3f1
+Configuration developed with the help of the posts:
+
+- https://medium.com/@takatoyo/step-by-step-implement-active-directory-auth-with-devise-33590bd3e3f1
+- https://medium.com/@takatoyo/how-to-get-an-information-from-active-directory-with-devise-d540872368c
 
 ## Prerequisites
 
