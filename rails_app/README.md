@@ -24,18 +24,24 @@ And access, on your browser: `http://localhost:3000`.
 
 ### Enviroment variables
 
-The project needs two enviroment variables: `LDAP_HOST` and `LDAP_ADMIN_PASSWORD`.
+The project needs two enviroment variables: `LDAP_HOST`, `LDAP_ATTRIBUTE`, `LDAP_BASE`, `LDAP_USER` and `LDAP_USER_PASSWORD`.
 
 To export this variables, run:
 
 ```
+export LDAP_ATTRIBUTE=<value>
+export LDAP_BASE=<value>
+export LDAP_USER=<value>
 export LDAP_HOST=<value>
-export LDAP_ADMIN_PASSWORD=<value>
+export LDAP_USER_PASSWORD=<value>
 ```
 
 Or add on your `~/.bash_profile`:
 
 ```
+LDAP_ATTRIBUTE=<value>
+LDAP_BASE=<value>
+LDAP_USER=<value>
 LDAP_HOST=<value>
-LDAP_ADMIN_PASSWORD=<value>
+LDAP_USER_PASSWORD=<value>
 ```

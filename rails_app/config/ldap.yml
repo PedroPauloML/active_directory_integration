@@ -27,10 +27,13 @@ authorizations: &AUTHORIZATIONS
 
 default: &default
   host: <%= ENV.fetch("LDAP_HOST") %>
-  attribute: sAMAccountName
-  base: CN=Users,DC=example,DC=com
-  admin_user: CN=Administrator,CN=Users,DC=example,DC=com
-  admin_password: <%= ENV.fetch("LDAP_ADMIN_PASSWORD") %>
+  # attribute: sAMAccountName
+  attribute: <%= ENV.fetch("LDAP_ATTRIBUTE") %>
+  # base: CN=Users,DC=example,DC=com
+  base: <%= ENV.fetch("LDAP_BASE") %>
+  # admin_user: CN=Administrator,CN=Users,DC=example,DC=com
+  admin_user: <%= ENV.fetch("LDAP_USER") %>
+  admin_password: <%= ENV.fetch("LDAP_USER_PASSWORD") %>
 
 ## Environment
 
@@ -67,4 +70,3 @@ production:
   ssl: start_tls
   # <<: *AUTHORIZATIONS
   <<: *default
-
