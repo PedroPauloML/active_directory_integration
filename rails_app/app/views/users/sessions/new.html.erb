@@ -1,6 +1,8 @@
 <h2>Log in</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= render partial: "users/shared/error_messages", locales: {resource: resource } %>
+
   <div class="field">
     <%= f.label :username, "Windows Account Name" %><br />
     <%= f.text_field :username, autofocus: true, autocomplete: "username" %>
